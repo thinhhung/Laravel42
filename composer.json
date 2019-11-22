@@ -4,7 +4,8 @@
 	"keywords": ["framework", "laravel"],
 	"license": "MIT",
 	"require": {
-		"laravel/framework": "4.2.*"
+		"laravel/framework": "4.2.*",
+		"tomgrohl/laravel4-php71-encrypter": "^1.1"
 	},
 	"autoload": {
 		"classmap": [
