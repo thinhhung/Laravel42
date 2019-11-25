@@ -46,6 +46,8 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 |
 */
 
+App::register(App\Exceptions\ServiceProvider::class);
+
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);

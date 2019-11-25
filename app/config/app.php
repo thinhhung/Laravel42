@@ -192,4 +192,29 @@ return array(
 
 	),
 
+	'debug_blacklist' => [
+        '_ENV' => [
+            'APP_KEY',
+            'AWS_BUCKET',
+            'AWS_KEY_PREFIX',
+            'AWS_ACCESS_KEY',
+            'AWS_SECRET_KEY',
+            'DATABASE_NAME',
+            'DATABASE_USERNAME',
+            'DATABASE_PASSWORD',
+        ],
+        '_SERVER' => [
+            'APP_KEY',
+            'AWS_BUCKET',
+            'AWS_KEY_PREFIX',
+            'AWS_ACCESS_KEY',
+            'AWS_SECRET_KEY',
+            'DATABASE_NAME',
+            'DATABASE_USERNAME',
+            'DATABASE_PASSWORD',
+        ],
+        '_POST' => [
+            'password',
+        ],
+    ],
 );
